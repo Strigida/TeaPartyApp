@@ -98,14 +98,14 @@ canvas {
 
 .jumbotron h1 {
 	font-weight: bolder;
-	text-shadow: 3px 3px 3px gray;
+	text-shadow: 10px 10px 20px 5px #2C2C2C;
 	color: #510f6d;
 }
 
 .jumbotron p {
 	font-weight: bold;
 	color: #d356c9;
-	text-shadow: 1px 1px 3px gray;
+	text-shadow: 1px 1px 3px #2C2C2C;
 }
 #container {
 	color: #005b66;
@@ -113,12 +113,28 @@ canvas {
 }
 
 #container #teaInfo{
-	color: #005b66;
-	padding: 10px;
+	color: #a0008d;
+	background-color: #bfffcd;
+	box-shadow: 10px 10px 20px 5px #2C2C2C;
+	border-radius: 5px 5px 5px 5px; 
 }
 #container #teaButton{
 	color: #005b66;
-	padding: 10px;
+	background-color: #e2a7df; 
+	box-shadow: 10px 10px 20px 5px #2C2C2C;
+	border-radius: 5px 5px 5px 5px;
+}
+#container #menuInfo{
+	color: #a0008d;
+	background-color: #bfffcd;
+	box-shadow: 10px 10px 20px 5px #2C2C2C;
+	border-radius: 5px 5px 5px 5px;
+}
+#container #menuButton{
+	color: #005b66;
+	background-color: #e2a7df; 
+	box-shadow: 10px 10px 20px 5px #2C2C2C;
+	border-radius: 5px 5px 5px 5px;
 }
 
 h1 {
