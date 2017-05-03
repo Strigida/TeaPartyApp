@@ -107,6 +107,19 @@ canvas {
 	color: #d356c9;
 	text-shadow: 1px 1px 3px gray;
 }
+#container {
+	color: #005b66;
+	padding: 10px;
+}
+
+#container #teaInfo{
+	color: #005b66;
+	padding: 10px;
+}
+#container #teaButton{
+	color: #005b66;
+	padding: 10px;
+}
 
 h1 {
 	font-size:24px;

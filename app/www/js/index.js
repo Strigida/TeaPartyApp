@@ -53,16 +53,45 @@ function tea_Select(tea)
 {
 	document.getElementById("teaInfo").value = tea;
 }
-
+function updateTeaTotalTaller()
+{
+	var x = document.getElementById("teaInfo").value;
+	x = "Tea to be Served: " + x;
+	document.getElementById("teaTotal").innerHTML = x;
+}
 function menu_Select(menu)
 {
 	document.getElementById("menuInfo").value = menu;
+}
+function updateMenu()
+{
+	var x = document.getElementById("menuInfo").value;
+	x = "Menu: " + x;
+	document.getElementById("menuTotal").innerHTML = x;
 }
 function guest_Num()
 {
 	var x = document.getElementById("guestNum").value;
 	x = "Number of Guests: " + x;
 	document.getElementById("guestTotal").innerHTML = x;
+}
+function guest_Name()
+{
+	var x = document.getElementById("guests").value;
+	x = "Invited Guests: " + x;
+	document.getElementById("guestNames").innerHTML = x;
+}
+function party_Place()
+{
+	var x = document.getElementById("place").value;
+	x = "Party Location: " + x;
+	document.getElementById("locationTotal").innerHTML = x;
+}
+function partyTime()
+{
+	var x = document.getElementById("when").value;
+	x = "Time and Date: " + x;
+	document.getElementById("timeTotal").innerHTML = x;
 }
 
     // create a new to-do

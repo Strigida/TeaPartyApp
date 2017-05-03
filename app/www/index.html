@@ -54,30 +54,38 @@
   <p>Lists to Help Plan Your Next Tea Party</p> 
 </div>
 
-<div i="container">
+<div id="container">
   	<form action="js/index.js" id="selections">
-  		<input type="radio" name="tea" value="Earl Grey" onClick="tea_Select(this.value)">Earl Grey<br>
-  		<input type="radio" name="tea" value="English Breakfast" onClick="tea_Select(this.value)">English Breakfast<br>
-  		<input type="radio" name="tea" value="Chai" onClick="tea_Select(this.value)">Chai<br>
-  		<input type="radio" name="tea" value="Irish Breakfast" onClick="tea_Select(this.value)">Irish Breakfast<br>
-  		<input type="radio" name="tea" value="Moroccan Mint" onClick="tea_Select(this.value)">Moroccan Mint<br>
+  		<input type="radio" name="tea" value="Earl Grey" onClick="tea_Select(this.value)"> Earl Grey<br>
+  		<input type="radio" name="tea" value="English Breakfast" onClick="tea_Select(this.value)"> English Breakfast<br>
+  		<input type="radio" name="tea" value="Chai" onClick="tea_Select(this.value)"> Chai<br>
+  		<input type="radio" name="tea" value="Irish Breakfast" onClick="tea_Select(this.value)"> Irish Breakfast<br>
+  		<input type="radio" name="tea" value="Moroccan Mint" onClick="tea_Select(this.value)"> Moroccan Mint<br>
   		<br>
-  		Your Tea Selection is:<input type="text" id="teaInfo" size="50">
+  		Your Tea Selection is: <input type="text" id="teaInfo" size="50">
+  		<input type="button" id="teaButton" onClick="updateTeaTotalTaller()" value="GO">
   		<br><br>
-  		<input type="radio" name="menu" value="Cucumber Sandwiches" onClick="menu_Select(this.value)">Cucumber Sandwiches<br>
-  		<input type="radio" name="menu" value="Croissants" onClick="menu_Select(this.value)">Croissants<br>
-  		<input type="radio" name="menu" value="Shortbread Biscuits" onClick="menu_Select(this.value)">Shortbread Biscuits<br>
-  		<input type="radio" name="menu" value="Green Salad" onClick="menu_Select(this.value)">Green Salad<br>
-  		<input type="radio" name="menu" value="Hors D'Oeuvres" onClick="menu_Select(this.value)">Hors D'Oeuvres<br>
+  		<input type="radio" name="menu" value="Cucumber Sandwiches" onClick="menu_Select(this.value)"> Cucumber Sandwiches<br>
+  		<input type="radio" name="menu" value="Croissants" onClick="menu_Select(this.value)"> Croissants<br>
+  		<input type="radio" name="menu" value="Shortbread Biscuits" onClick="menu_Select(this.value)"> Shortbread Biscuits<br>
+  		<input type="radio" name="menu" value="Green Salad" onClick="menu_Select(this.value)"> Green Salad<br>
+  		<input type="radio" name="menu" value="Hors D'Oeuvres" onClick="menu_Select(this.value)"> Hors D'Oeuvres<br>
   		<br>
-  		Your Menu Selection is:<input type="text" id="menuInfo" size="50">
+  		Your Menu Selection is: <input type="text" id="menuInfo" size="50">
+  		<input type="button" onClick="updateMenu()" value="GO">
   		<br><br>
-  		How many guests will you invite?<input type="text" id="guestNum" value="0">
+  		How many guests will you invite? <input type="text" id="guestNum" value="0" size="5">
 		<input type="button" onClick="guest_Num()" value="GO">
   		<br><br>
-  		Who will you invite?<input type="text" id="guests" onChange="guestName(this.text)"><br>
-  		<br>
-		
+  		Who will you invite? <input type="text" id="guests" value="" size="50">
+  		<input type="button" onClick="guest_Name()" value="GO">
+  		<br><br>
+		Where will you host the Party? <input type="text" id="place" value="" size="50">
+  		<input type="button" onClick="party_Place()" value="GO">
+  		<br><br>
+  		When is the Party? <input type="text" id="when" value="(Day and Time)" size="50">
+  		<input type="button" onClick="partyTime()" value="GO">
+  		<br><br>
   	</form>
   	<div>
   		<p id="teaTotal">Tea:</p>
