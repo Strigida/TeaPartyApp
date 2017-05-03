@@ -184,6 +184,16 @@ canvas {
 	box-shadow: 10px 10px 20px 5px #2C2C2C;
 	border-radius: 5px 5px 5px 5px;
 }
+#infoBox {
+	color: aquamarine;
+	background-color: #006828;
+	font-weight: bolder;
+	box-shadow: 10px 10px 20px 5px #2C2C2C;
+	border-radius: 5px 5px 5px 5px;
+}
+#infoBox p {
+	text-shadow: 10px 10px 20px 5px #000000;
+}
 
 h1 {
 	font-size:24px;
