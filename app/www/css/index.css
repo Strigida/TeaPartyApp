@@ -185,14 +185,23 @@ canvas {
 	border-radius: 5px 5px 5px 5px;
 }
 #infoBox {
-	color: aquamarine;
-	background-color: #006828;
+	color: #d6ffe6;
+	background-color: #3a7a53;
 	font-weight: bolder;
 	box-shadow: 10px 10px 20px 5px #2C2C2C;
-	border-radius: 5px 5px 5px 5px;
+	border-radius: 20px 20px 20px 20px;
+	border: 2px dotted #4BDF85;
 }
 #infoBox p {
 	text-shadow: 10px 10px 20px 5px #000000;
+}
+#dataTable {
+	color: #d6ffe6;
+	background-color: #3a7a53;
+	font-weight: bolder;
+	box-shadow: 10px 10px 20px 5px #2C2C2C;
+	border-radius: 20px 20px 20px 20px;
+	border: 2px dotted #4BDF85;
 }
 
 h1 {
