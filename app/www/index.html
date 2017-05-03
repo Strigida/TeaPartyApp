@@ -55,7 +55,7 @@
 </div>
 
 <div i="container">
-  	<form action="js/index.js" id="teaSelect">
+  	<form action="js/index.js" id="selections">
   		<input type="radio" name="tea" value="Earl Grey" onClick="tea_Select(this.value)">Earl Grey<br>
   		<input type="radio" name="tea" value="English Breakfast" onClick="tea_Select(this.value)">English Breakfast<br>
   		<input type="radio" name="tea" value="Chai" onClick="tea_Select(this.value)">Chai<br>
@@ -72,9 +72,21 @@
   		<br>
   		Your Menu Selection is:<input type="text" id="menuInfo" size="50">
   		<br><br>
-  		Your Tea Party Info:<input type="text" id="total" height="100" width="160">
-  		<input type="submit" value="Go!">
+  		How many guests will you invite?<input type="text" id="guestNum" value="0">
+		<input type="button" onClick="guest_Num()" value="GO">
+  		<br><br>
+  		Who will you invite?<input type="text" id="guests" onChange="guestName(this.text)"><br>
+  		<br>
+		
   	</form>
+  	<div>
+  		<p id="teaTotal">Tea:</p>
+ 		<p id="menuTotal">Menu:</p>
+ 		<p id="guestTotal">Number of Guests:</p>
+ 		<p id="guestNames">Guest Names:</p>
+ 		<p id="locationTotal">Party Location:</p>
+ 		<p id="timeTotal">Time:</p>
+	</div>
    
     <input id="addButton" type="button" value="Add To-Do" onclick="createNewToDo()"/>
     <input id="deleteButton" type="button" value="Remove Completed Tasks()" onclick="removeCompletedTasks()"/>

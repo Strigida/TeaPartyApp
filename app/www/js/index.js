@@ -58,6 +58,12 @@ function menu_Select(menu)
 {
 	document.getElementById("menuInfo").value = menu;
 }
+function guest_Num()
+{
+	var x = document.getElementById("guestNum").value;
+	x = "Number of Guests: " + x;
+	document.getElementById("guestTotal").innerHTML = x;
+}
 
     // create a new to-do
 function createNewToDo()
