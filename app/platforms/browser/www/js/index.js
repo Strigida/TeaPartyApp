@@ -49,11 +49,55 @@ var app = {
 
 };
 
+function tea_Select(tea)
+{
+	document.getElementById("teaInfo").value = tea;
+}
+function updateTeaTotalTaller()
+{
+	var x = document.getElementById("teaInfo").value;
+	x = "Tea to be Served: " + x;
+	document.getElementById("teaTotal").innerHTML = x;
+}
+function menu_Select(menu)
+{
+	document.getElementById("menuInfo").value = menu;
+}
+function updateMenu()
+{
+	var x = document.getElementById("menuInfo").value;
+	x = "Menu: " + x;
+	document.getElementById("menuTotal").innerHTML = x;
+}
+function guest_Num()
+{
+	var x = document.getElementById("guestNum").value;
+	x = "Number of Guests: " + x;
+	document.getElementById("guestTotal").innerHTML = x;
+}
+function guest_Name()
+{
+	var x = document.getElementById("guests").value;
+	x = "Invited Guests: " + x;
+	document.getElementById("guestNames").innerHTML = x;
+}
+function party_Place()
+{
+	var x = document.getElementById("place").value;
+	x = "Party Location: " + x;
+	document.getElementById("locationTotal").innerHTML = x;
+}
+function partyTime()
+{
+	var x = document.getElementById("when").value;
+	x = "Time and Date: " + x;
+	document.getElementById("timeTotal").innerHTML = x;
+}
+
     // create a new to-do
 function createNewToDo()
 {
     var todoDictionary = {};
-	var detailDictionary = {};
  
     // prompt the user to enter to-do
     var todo = prompt("To-Do","");
@@ -68,20 +112,6 @@ function createNewToDo()
             // append the new to-do with the table
             todoDictionary = { check : 0 , text : todo}; //this is where we store local permamenet data
             addTableRow(todoDictionary, false); //this is defined below
-        }
-    }
-	var details = prompt("Details","");
-    if (details != null)
-    {
-        if (details == "")
-        {
-            alert("Details can't be empty!");
-        }
-        else
-        {
-            // append the new to-do with the table
-            detailDictionary = { check : 0 , text : details}; //this is where we store local permamenet data
-            addTableRow(detailDictionary, false); //this is defined below
         }
     }
  
@@ -116,20 +146,9 @@ function addTableRow(todoDictionary, appIsLoading)
     element2.value = todoDictionary["text"];
     element2.setAttribute("onchange", "saveToDoList()");
     cell2.appendChild(element2);
-	
-	//creat another text box
-	var cell3 = row.insertCell(2);
-    var element3 = document.createElement("input");
-    element3.type = "text";
-    element3.name = "txtbox2[]";
-    element3.size = 16;
-    element3.id = "text" + rowID;
-    element3.value = detailDictionary["text"];
-    element3.setAttribute("onchange", "saveToDoList()");
-    cell3.appendChild(element3);
  
     // create the view button
-    var cell4 = row.insertCell(3);
+    var cell4 = row.insertCell(2);
     var element4 = document.createElement("input");
     element4.type = "button";
     element4.id = rowID;
@@ -138,7 +157,7 @@ function addTableRow(todoDictionary, appIsLoading)
     cell4.appendChild(element4);
  
     // create the delete button
-    var cell5 = row.insertCell(4);
+    var cell5 = row.insertCell(3);
     var element5 = document.createElement("input");
     element5.type = "button";
     element5.value = "Delete";
