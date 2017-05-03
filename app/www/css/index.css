@@ -98,14 +98,14 @@ canvas {
 
 .jumbotron h1 {
 	font-weight: bolder;
-	text-shadow: 10px 10px 20px 5px #2C2C2C;
+	text-shadow: 10px 10px 20px 5px #000000;
 	color: #510f6d;
 }
 
 .jumbotron p {
 	font-weight: bold;
 	color: #d356c9;
-	text-shadow: 1px 1px 3px #2C2C2C;
+	text-shadow: 1px 1px 3px #000000;
 }
 #container {
 	color: #005b66;
@@ -131,6 +131,54 @@ canvas {
 	border-radius: 5px 5px 5px 5px;
 }
 #container #menuButton{
+	color: #005b66;
+	background-color: #e2a7df; 
+	box-shadow: 10px 10px 20px 5px #2C2C2C;
+	border-radius: 5px 5px 5px 5px;
+}
+#container #guestNum{
+	color: #a0008d;
+	background-color: #bfffcd;
+	box-shadow: 10px 10px 20px 5px #2C2C2C;
+	border-radius: 5px 5px 5px 5px;
+}
+#container #numButton{
+	color: #005b66;
+	background-color: #e2a7df; 
+	box-shadow: 10px 10px 20px 5px #2C2C2C;
+	border-radius: 5px 5px 5px 5px;
+}
+#container #guests{
+	color: #a0008d;
+	background-color: #bfffcd;
+	box-shadow: 10px 10px 20px 5px #2C2C2C;
+	border-radius: 5px 5px 5px 5px;
+}
+#container #guestButton{
+	color: #005b66;
+	background-color: #e2a7df; 
+	box-shadow: 10px 10px 20px 5px #2C2C2C;
+	border-radius: 5px 5px 5px 5px;
+}
+#container #place{
+	color: #a0008d;
+	background-color: #bfffcd;
+	box-shadow: 10px 10px 20px 5px #2C2C2C;
+	border-radius: 5px 5px 5px 5px;
+}
+#container #placeButton{
+	color: #005b66;
+	background-color: #e2a7df; 
+	box-shadow: 10px 10px 20px 5px #2C2C2C;
+	border-radius: 5px 5px 5px 5px;
+}
+#container #when{
+	color: #a0008d;
+	background-color: #bfffcd;
+	box-shadow: 10px 10px 20px 5px #2C2C2C;
+	border-radius: 5px 5px 5px 5px;
+}
+#container #whenButton{
 	color: #005b66;
 	background-color: #e2a7df; 
 	box-shadow: 10px 10px 20px 5px #2C2C2C;

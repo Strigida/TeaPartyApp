@@ -75,25 +75,25 @@
   		<input type="button" id="menuButton" onClick="updateMenu()" value="GO">
   		<br><br>
   		How many guests will you invite? <input type="text" id="guestNum" value="0" size="5">
-		<input type="button" onClick="guest_Num()" value="GO">
+		<input type="button" id="numButton" onClick="guest_Num()" value="GO">
   		<br><br>
   		Who will you invite? <input type="text" id="guests" value="" size="50">
-  		<input type="button" onClick="guest_Name()" value="GO">
+  		<input type="button" id="guestButton" onClick="guest_Name()" value="GO">
   		<br><br>
 		Where will you host the Party? <input type="text" id="place" value="" size="50">
-  		<input type="button" onClick="party_Place()" value="GO">
+  		<input type="button" id="placeButton" onClick="party_Place()" value="GO">
   		<br><br>
   		When is the Party? <input type="text" id="when" value="(Day and Time)" size="50">
-  		<input type="button" onClick="partyTime()" value="GO">
+  		<input type="button" id="whenButton" onClick="partyTime()" value="GO">
   		<br><br>
   	</form>
   	<div>
-  		<p id="teaTotal">Tea:</p>
- 		<p id="menuTotal">Menu:</p>
- 		<p id="guestTotal">Number of Guests:</p>
- 		<p id="guestNames">Guest Names:</p>
- 		<p id="locationTotal">Party Location:</p>
- 		<p id="timeTotal">Time:</p>
+			<p id="teaTotal">Tea:</p>
+			<p id="menuTotal">Menu:</p>
+			<p id="guestTotal">Number of Guests:</p>
+			<p id="guestNames">Guest Names:</p>
+			<p id="locationTotal">Party Location:</p>
+			<p id="timeTotal">Time:</p>
 	</div>
    
     <input id="addButton" type="button" value="Add To-Do" onclick="createNewToDo()"/>
