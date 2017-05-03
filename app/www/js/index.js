@@ -94,12 +94,10 @@ function partyTime()
 	document.getElementById("timeTotal").innerHTML = x;
 }
 
-function savePartyInfo() {
+function savePartyInfo(saveParty) {
 	var teaDictionary = {};
-	if(myTea != null) {
-		if (myTea == "clicked") {
-			teaDictionary = {check : 0, text : tea };
-		}
+	if(saveParty.value == "SAVE") {
+		teaDictionary = {check : 0 , text : "tea"};
 	}
 }
 

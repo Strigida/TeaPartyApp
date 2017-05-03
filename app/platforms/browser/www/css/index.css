@@ -191,12 +191,28 @@ canvas {
 	box-shadow: 10px 10px 20px 5px #2C2C2C;
 	border-radius: 20px 20px 20px 20px;
 	border: 2px dotted #4BDF85;
+	text-align: center;
+	padding: 10px;
 }
 #infoBox p {
 	text-shadow: 10px 10px 20px 5px #000000;
 }
+#saveParty {
+	color: darkorchid;
+	height: 35px;
+	width: 50px;
+	background-color: #e2a7df; 
+	box-shadow: 10px 10px 20px 5px #2C2C2C;
+	border-radius: 5px 5px 5px 5px;
+	padding: 10px;
+	text-align: center;
+}
+.centerButton {
+	margin: 0 auto;
+	text-align: center;
+}
 #dataTable {
-	color: #d6ffe6;
+	color: black;
 	background-color: #3a7a53;
 	font-weight: bolder;
 	box-shadow: 10px 10px 20px 5px #2C2C2C;

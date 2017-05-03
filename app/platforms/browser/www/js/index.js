@@ -94,6 +94,13 @@ function partyTime()
 	document.getElementById("timeTotal").innerHTML = x;
 }
 
+function savePartyInfo(saveParty) {
+	var teaDictionary = {};
+	if(saveParty.value == "SAVE") {
+		teaDictionary = {check : 0 , text : "tea"};
+	}
+}
+
     // create a new to-do
 function createNewToDo()
 {
