@@ -98,6 +98,8 @@ function savePartyInfo(saveParty) {
 	var teaDictionary = {};
 	if(saveParty.value == "SAVE") {
 		teaDictionary = {check : 0 , text : "tea"};
+		var teaEllement = document.createElement("input");
+		teaDictionary.appendChild(teaEllement);
 	}
 }
 
