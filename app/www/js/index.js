@@ -54,6 +54,11 @@ function tea_Select(tea)
 	document.getElementById("teaInfo").value = tea;
 }
 
+function menu_Select(menu)
+{
+	document.getElementById("menuInfo").value = menu;
+}
+
     // create a new to-do
 function createNewToDo()
 {

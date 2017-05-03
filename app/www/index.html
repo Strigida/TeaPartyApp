@@ -54,7 +54,7 @@
   <p>Lists to Help Plan Your Next Tea Party</p> 
 </div>
 
-<div>
+<div i="container">
   	<form action="js/index.js" id="teaSelect">
   		<input type="radio" name="tea" value="Earl Grey" onClick="tea_Select(this.value)">Earl Grey<br>
   		<input type="radio" name="tea" value="English Breakfast" onClick="tea_Select(this.value)">English Breakfast<br>
@@ -64,10 +64,17 @@
   		<br>
   		Your Tea Selection is:<input type="text" id="teaInfo" size="50">
   		<br><br>
+  		<input type="radio" name="menu" value="Cucumber Sandwiches" onClick="menu_Select(this.value)">Cucumber Sandwiches<br>
+  		<input type="radio" name="menu" value="Croissants" onClick="menu_Select(this.value)">Croissants<br>
+  		<input type="radio" name="menu" value="Shortbread Biscuits" onClick="menu_Select(this.value)">Shortbread Biscuits<br>
+  		<input type="radio" name="menu" value="Green Salad" onClick="menu_Select(this.value)">Green Salad<br>
+  		<input type="radio" name="menu" value="Hors D'Oeuvres" onClick="menu_Select(this.value)">Hors D'Oeuvres<br>
+  		<br>
+  		Your Menu Selection is:<input type="text" id="menuInfo" size="50">
+  		<br><br>
   		Your Tea Party Info:<input type="text" id="total" height="100" width="160">
   		<input type="submit" value="Go!">
-  		
-	</form>
+  	</form>
    
     <input id="addButton" type="button" value="Add To-Do" onclick="createNewToDo()"/>
     <input id="deleteButton" type="button" value="Remove Completed Tasks()" onclick="removeCompletedTasks()"/>
