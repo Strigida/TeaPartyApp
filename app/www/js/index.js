@@ -71,9 +71,15 @@ function updateMenu()
 }
 function guest_Num()
 {
-	var x = document.getElementById("guestNum").value;
-	x = "Number of Guests: " + x;
-	document.getElementById("guestTotal").innerHTML = x;
+	var numGuest = document.getElementById("guestNum").value;
+	var numGuestOutput = "Number of Guests: " + numGuest;
+	
+	var tea = document.getElementById("teaInfo").value;
+	var food = document.getElementById("menuInfo").value;
+	var groceries = "Groceries Needed: You will need " + ((numGuest * 1) + 1) + " cups of " + tea + ", and " + ((numGuest * 2) + 1 ) + " " + food + "."
+	
+	document.getElementById("guestTotal").innerHTML = numGuestOutput;
+	document.getElementById("groceryTotal").innerHTML = groceries;
 }
 function guest_Name()
 {
@@ -89,18 +95,24 @@ function party_Place()
 }
 function partyTime()
 {
-	var x = document.getElementById("when").value;
-	x = "Time and Date: " + x;
-	document.getElementById("timeTotal").innerHTML = x;
+	var time = document.getElementById("when").value;
+	var eventTime = "Time and Date: " + time;
+	
+	var people = document.getElementById("guests").value;
+	var individuals = people.split(" ");
+	var where = document.getElementById("place").value;
+	
+	document.getElementById("timeTotal").innerHTML = eventTime;
+	for(var i = 0; i < individuals; i++){
+		var inviteMsg = individuals[i] + ", you are invited to a Tea Party on " + time + " o'clock at " + where + " !";
+		document.getElementById("invitation").innerHTML = inviteMsg;
+	}
+	
 }
 
 function savePartyInfo(saveParty) {
-	var teaDictionary = {};
-	if(saveParty.value == "SAVE") {
-		teaDictionary = {check : 0 , text : "tea"};
-		var teaEllement = document.createElement("input");
-		teaDictionary.appendChild(teaEllement);
-	}
+	var myTea = "";
+	window.localStorage.setItem("saveTeaInfo", JSON.stringify(myTea));
 }
 
     // create a new to-do
