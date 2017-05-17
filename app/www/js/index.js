@@ -97,20 +97,23 @@ function partyTime()
 {
 	var time = document.getElementById("when").value;
 	var eventTime = "Time and Date: " + time;
-	
-	var people = document.getElementById("guests").value;
-	var individuals = people.split(" ");
-	var where = document.getElementById("place").value;
-	
 	document.getElementById("timeTotal").innerHTML = eventTime;
-	for(var i = 0; i < individuals; i++){
-		var inviteMsg = individuals[i] + ", you are invited to a Tea Party on " + time + " o'clock at " + where + " !";
+}
+function inviteList() {
+	var time = document.getElementById("when").value;
+	var where = document.getElementById("place").value;
+	var people = document.getElementById("guests").value;
+	var individuals = people.split(",");
+	var inviteMsg = " you are invited to a Tea Party on " + time + " o'clock at " + where + " !";
+	var i;
+	for (i = 0; i < individuals.length; i++) {
+		inviteMsg = individuals[i] + inviteMsg + "<br>";
 		document.getElementById("invitation").innerHTML = inviteMsg;
 	}
 	
 }
 
-function savePartyInfo(saveParty) {
+function savePartyInfo() {
 	var myTea = "";
 	window.localStorage.setItem("saveTeaInfo", JSON.stringify(myTea));
 }
