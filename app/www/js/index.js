@@ -103,12 +103,14 @@ function inviteList() {
 	var time = document.getElementById("when").value;
 	var where = document.getElementById("place").value;
 	var people = document.getElementById("guests").value;
-	var individuals = people.split(",");
-	var inviteMsg = " you are invited to a Tea Party on " + time + " o'clock at " + where + " !";
+	var host = document.getElementById("hostName").value;
+	var individuals = people.split(", ");
+	var inviteMsg = ", you're invited to a Tea Party hosted by " + host + " on " + time + " at " + where + "!<br>";
 	var i;
+	var text = "";
 	for (i = 0; i < individuals.length; i++) {
-		inviteMsg = individuals[i] + inviteMsg + "<br>";
-		document.getElementById("invitation").innerHTML = inviteMsg;
+		text += individuals[i] + inviteMsg + "<br>";
+		document.getElementById("invitation").innerHTML = text;
 	}
 	
 }

@@ -172,6 +172,12 @@ canvas {
 	box-shadow: 10px 10px 20px 5px #2C2C2C;
 	border-radius: 5px 5px 5px 5px;
 }
+#container #hostName{
+	color: #a0008d;
+	background-color: #bfffcd;
+	box-shadow: 10px 10px 20px 5px #2C2C2C;
+	border-radius: 5px 5px 5px 5px;
+}
 #container #when{
 	color: #a0008d;
 	background-color: #bfffcd;
@@ -183,6 +189,13 @@ canvas {
 	background-color: #e2a7df; 
 	box-shadow: 10px 10px 20px 5px #2C2C2C;
 	border-radius: 5px 5px 5px 5px;
+}
+#container #invitations{
+	color: #005b66;
+	background-color: #A7DCBD; 
+	box-shadow: 10px 10px 20px 5px #2C2C2C;
+	border-radius: 5px 5px 5px 5px;
+	margin-left: 175px;
 }
 #infoBox {
 	color: #d6ffe6;
